@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #9deba5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGood">
+    <children>
+        <AnchorPane fx:id="hsimage" layoutX="1.0" layoutY="108.0" prefHeight="612.0" prefWidth="1080.0" style="-fx-background-color: #d9ffdd;">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="261.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/800x600-kraken-green-promo.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="good_name" layoutX="258.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="305.962890625">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Button fx:id="button_add_cart" layoutX="633.0" layoutY="68.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="155.0" text="добавить в корзину">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_to_cart" layoutX="833.0" layoutY="68.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="155.0" text="перейти в корзину">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Text fx:id="good_price" layoutX="258.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="258.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Характеристики">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <ScrollPane fx:id="char_pane" layoutX="253.0" layoutY="199.0" prefHeight="381.0" prefWidth="333.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+              </content>
+            </ScrollPane>
+         </children>
+        </AnchorPane>
+        <Label layoutX="431.0" layoutY="25.0" text="TAudio Store" textFill="#06461b">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+      <Button fx:id="button_back" layoutX="56.0" layoutY="39.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>
