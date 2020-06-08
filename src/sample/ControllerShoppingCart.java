@@ -77,7 +77,7 @@ public class ControllerShoppingCart {
         final FlowPane pane = new FlowPane();
         double current_sum = 0.0;
         //ArrayList<Integer> ord = ControllerStore.order;
-        for (int i : ControllerStore.order){
+        for (Integer i : ControllerStore.order){
             ResultSet rs = statement.executeQuery("select good.name, good.price from good where good.id = " + i + ";");
             ArrayList<String> arr = new ArrayList<>(Arrays.asList(rsToStringArr(rs)));
             double sum = sumCounter(arr.get(0));
