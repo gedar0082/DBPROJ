@@ -64,7 +64,6 @@ public class ControllerShoppingCart {
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
-
         });
 
 
